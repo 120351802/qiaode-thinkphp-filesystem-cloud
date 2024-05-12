@@ -1,0 +1,33 @@
+{
+    "name": "qiaode/thinkphp8-filesystem-cloud",
+    "description": "thinkphp8.0 filesystem,include Aliyun and Qiniu",
+    "type": "library",
+    "version": "dev-master",
+    "require": {
+        "php": ">=8.0.0",
+        "topthink/framework": "^8.0",
+        "league/flysystem": "^3.0",
+        "xxtime/flysystem-aliyun-oss": "^1.7",
+        "overtrue/flysystem-cos": "^5.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ChengFeng",
+            "email": "120351802@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "qiaode\\filesystem\\": "src/"
+        }
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "qiaode\\filesystem\\Service"
+            ]
+        }
+    }
+}
